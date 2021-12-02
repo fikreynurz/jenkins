@@ -1,0 +1,88 @@
+# token
+# fikri eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpa3JleW51cnN5YWJhbmlAZ21haWwuY29tIiwiaWQiOiI2MTVkNTIyY2U3OTg3MTk2ZGUzZGE3YjMiLCJpYXQiOjE2MzU3MzU1MTJ9.YqDt8OYqJsCoKflqVpCWubRzpZMEqH1dYIXDiDRw6zA
+# pakdodi eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBha2RvZGljb250b2hAZ21haWwuY29tIiwiaWQiOiI2MTVkNTFjYmU3OTg3MTk2ZGUzZGE3YWQiLCJpYXQiOjE2MzU3MzU1NTB9.liEnFqb83j7G50GgyOmnVaNe2TxzqBgvf-oyflXdMFk
+# pakpras eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBha3ByYXNjb250b2hAZ21haWwuY29tIiwiaWQiOiI2MWExYTdlYWJkNTZlMmY4YTYyZjkyNjYiLCJpYXQiOjE2Mzc5ODQ1OTB9.7WLc2PtOAboPFtKr-c9uHkmna_XzVOjGgcSihZ6LlCk
+# azril eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF6cmllbHI4NTNAZ21haWwuY29tIiwiaWQiOiI2MTVlNmFjZDI0MWU4ODI5ZWIzN2FhOTAiLCJpYXQiOjE2MzUzMDA2OTYsImV4cCI6MTYzNTM4NzA5Nn0.tm8-IPz1l0ODyQi6MCz8zsy6uy3XiZt0-7aDA4BW9Ck
+POST http://localhost:3000/user/signin HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "fikreynursyabani@gmail.com",
+    "password": "kadal123"
+}
+
+###
+
+POST http://localhost:3000/user/signin HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "pakdodicontoh@gmail.com",
+    "password": "pklsija2021"
+}
+
+###
+
+
+POST http://localhost:3000/user/signin HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "azrielr853@gmail.com",
+    "password": "azriel123"
+}
+
+###
+
+POST http://localhost:3000/user/signup HTTP/1.1
+Content-Type: application/json
+
+{
+    "fullName": "MUHAMMAD FIKRI NUR S",
+    "email": "fikreynursyabani@gmail.com",
+    "password": ""
+}
+
+###
+
+GET http://localhost:3000/user/allUser HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBha2RvZGljb250b2hAZ21haWwuY29tIiwiaWQiOiI2MWExYTliYmZmNWE3NzFjNzAyNGM1ZWYiLCJpYXQiOjE2Mzc5ODUxMzR9.BfI0L3HkBP6-28hYf3ybmOimrzwR2K-AkofR_wyryWw
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/user/profile HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpa3JleW51cnN5YWJhbmlAZ21haWwuY29tIiwiaWQiOiI2MTVkNTIyY2U3OTg3MTk2ZGUzZGE3YjMiLCJpYXQiOjE2MzU3MzU1MTJ9.YqDt8OYqJsCoKflqVpCWubRzpZMEqH1dYIXDiDRw6zA
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/user/manager
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBha2RvZGljb250b2hAZ21haWwuY29tIiwiaWQiOiI2MTVkNTFjYmU3OTg3MTk2ZGUzZGE3YWQiLCJpYXQiOjE2MzM1MDYxNzV9.BpbOjs3ZIxILprmL-p4d0G0tA9F-movexr8IqSScssc
+Content-Type: application/json
+
+###
+
+PATCH http://localhost:3000/user/profile HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpa3JleW51cnN5YWJhbmlAZ21haWwuY29tIiwiaWQiOiI2MTRjMzNjOWI5NWQxYmE3YjgxNWMwZGUiLCJpYXQiOjE2MzM0MDMxODR9.KtRzfF6FpklNw0O68SPstxCej8DnEA2fJVeywAyLWcc
+Content-Type: application/json
+
+{
+    "fullName": "MUHAMMAD FIKRI NUR S"
+}
+
+###
+
+PATCH http://localhost:3000/user/profile/password
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpa3JleW51cnN5YWJhbmlAZ21haWwuY29tIiwiaWQiOiI2MTVkNTIyY2U3OTg3MTk2ZGUzZGE3YjMiLCJpYXQiOjE2MzQwOTU5NjZ9.OZyjn8BWecuv8So_e7lWu69ETh5HVrUhtCQYj5Z6tD0
+Content-Type: application/json
+
+{
+    "oldPassword": "fikrinur1211",
+    "password": "pklsija2021"
+}
+
+###
+
+DELETE http://localhost:3000/user/61a1a54db5c68c99349281ec HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBha2RvZGljb250b2hAZ21haWwuY29tIiwiaWQiOiI2MWExYTliYmZmNWE3NzFjNzAyNGM1ZWYiLCJpYXQiOjE2Mzc5ODUxMzR9.BfI0L3HkBP6-28hYf3ybmOimrzwR2K-AkofR_wyryWw

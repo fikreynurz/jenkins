@@ -1,0 +1,58 @@
+POST http://localhost:3000/cuti/ HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5hdWZhbGZpa3JpMTIwMkBnbWFpbC5jb20iLCJpZCI6IjYxNjNmYTEwYjI2MTY1YzJiOWI1NzA2ZSIsImlhdCI6MTYzNTgyNjIyNX0.yCBavGL47LWShhQ5W2UHDRejPxD08_kpqymhiVeWrh4
+Content-Type: application/json
+
+{
+    //"assigner": "615d520de7987196de3da7b0",
+    "position": "Anak Magang",
+    "necessity": "pengen ke pantai",
+    "startDate": "2021-11-04",
+    "endDate": "2021-11-05"
+}
+
+###
+
+GET http://localhost:3000/cuti/ HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5hdWZhbGZpa3JpMTIwMkBnbWFpbC5jb20iLCJpZCI6IjYxNjNmYTEwYjI2MTY1YzJiOWI1NzA2ZSIsImlhdCI6MTYzNTgyNjIyNX0.yCBavGL47LWShhQ5W2UHDRejPxD08_kpqymhiVeWrh4
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/cuti/617ba8b8e693835d842ab334 HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBha2RvZGljb250b2hAZ21haWwuY29tIiwiaWQiOiI2MTVkNTFjYmU3OTg3MTk2ZGUzZGE3YWQiLCJpYXQiOjE2MzU0NzU5NjAsImV4cCI6MTYzNTU2MjM2MH0.yDjYe4vn2vkG7dZv7ziQK890xn3QkPnqHIMpGzOSYqE
+Content-Type: application/json
+
+###
+
+PATCH http://localhost:3000/cuti/6180b951dc58ca297e91252e HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5hdWZhbGZpa3JpMTIwMkBnbWFpbC5jb20iLCJpZCI6IjYxNjNmYTEwYjI2MTY1YzJiOWI1NzA2ZSIsImlhdCI6MTYzNTgyNjIyNX0.yCBavGL47LWShhQ5W2UHDRejPxD08_kpqymhiVeWrh4
+Content-Type: application/json
+
+{
+    "position": "ada aja",
+    "necessity": "pengen ke pantai",
+    "startDate": "2021-11-02",
+    "endDate": "2021-11-04"
+}
+
+###
+
+PATCH http://localhost:3000/cuti/approval/6180b951dc58ca297e91252e HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBha2RvZGljb250b2hAZ21haWwuY29tIiwiaWQiOiI2MTVkNTFjYmU3OTg3MTk2ZGUzZGE3YWQiLCJpYXQiOjE2MzU0NzU5NjAsImV4cCI6MTYzNTU2MjM2MH0.yDjYe4vn2vkG7dZv7ziQK890xn3QkPnqHIMpGzOSYqE
+Content-Type: application/json
+
+{
+    "approval": "approved"
+}
+
+###
+
+DELETE http://localhost:3000/cuti/6180bc9eebc4226fa13ae774
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBha2RvZGljb250b2hAZ21haWwuY29tIiwiaWQiOiI2MTVkNTFjYmU3OTg3MTk2ZGUzZGE3YWQiLCJpYXQiOjE2MzU3MzU1NTB9.liEnFqb83j7G50GgyOmnVaNe2TxzqBgvf-oyflXdMFk
+Content-Type: application/json
+
+###
+
+DELETE http://localhost:3000/cuti/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBha2RvZGljb250b2hAZ21haWwuY29tIiwiaWQiOiI2MTVkNTFjYmU3OTg3MTk2ZGUzZGE3YWQiLCJpYXQiOjE2MzUxMzQ5OTgsImV4cCI6MTYzNTIyMTM5OH0.5K6DUoBdO5tME-8Fxa9LNWTwFHbWEWZCTSfwlI_5YsE
+Content-Type: application/json

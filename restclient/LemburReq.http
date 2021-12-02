@@ -1,0 +1,62 @@
+POST http://localhost:3000/lembur/ HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpa3JleW51cnN5YWJhbmlAZ21haWwuY29tIiwiaWQiOiI2MWExYWNiODg1OWI4OGVmODJiMGQ0YjUiLCJpYXQiOjE2MzgyNjY0MTV9.s4Oe0yT2reI1iL82BFxGaq6lXtOgXmqRiugd_AX6NPo
+Content-Type: application/json
+
+{
+    "assigner": "61a1a9bbff5a771c7024c5ef",
+    "reasons": ["Overtime App", "Test", "Done"],
+    "time": "2021-10-18 00:00:00",
+    "startTime": "2021-10-18 02:00:00",
+    "endTime": "2021-10-18 04:30:00"
+}
+
+###
+
+GET http://localhost:3000/lembur/ HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpa3JleW51cnN5YWJhbmlAZ21haWwuY29tIiwiaWQiOiI2MWExYWNiODg1OWI4OGVmODJiMGQ0YjUiLCJpYXQiOjE2MzgzMzM4MzV9.kYfT1vDKSMtFVwR8-bDVvNQr0uPtkAdC_wrp_GBQfWc
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/lembur/approval/process
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBha2RvZGljb250b2hAZ21haWwuY29tIiwiaWQiOiI2MTVkNTFjYmU3OTg3MTk2ZGUzZGE3YWQiLCJpYXQiOjE2MzM1NzgyNzN9.4PqJuiKj8FEzZduiEVSlp6ieHNX1MvBD6VLu6yxYHUQ
+Content-Type: application/json
+
+###
+# token fikri
+GET http://localhost:3000/lembur/616001b6443db50dae2dfbec HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpa3JleW51cnN5YWJhbmlAZ21haWwuY29tIiwiaWQiOiI2MTVkNTIyY2U3OTg3MTk2ZGUzZGE3YjMiLCJpYXQiOjE2MzM5MTkyODV9.2pRbtMAdzRLxvYqCH4efOX0GozjG5iq69WxZPpQPNPQ
+Content-Type: application/json
+
+###
+
+PATCH http://localhost:3000/lembur/6163bd3543ae33410f26106a
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpa3JleW51cnN5YWJhbmlAZ21haWwuY29tIiwiaWQiOiI2MTVkNTIyY2U3OTg3MTk2ZGUzZGE3YjMiLCJpYXQiOjE2MzM5MTkyODV9.2pRbtMAdzRLxvYqCH4efOX0GozjG5iq69WxZPpQPNPQ
+Content-Type: application/json
+
+{
+    "time": "2021-10-11 00:00:00",
+    "startTime": "2021-10-11 02:00:00",
+    "endTime": "2021-10-11 05:00:00",
+    "reasons": "tratatata"
+}
+
+###
+
+PATCH http://localhost:3000/lembur/approval/61651cff15e8da6f69a156f0
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBha2RvZGljb250b2hAZ21haWwuY29tIiwiaWQiOiI2MTVkNTFjYmU3OTg3MTk2ZGUzZGE3YWQiLCJpYXQiOjE2MzM1NzgyNzN9.4PqJuiKj8FEzZduiEVSlp6ieHNX1MvBD6VLu6yxYHUQ
+Content-Type: application/json
+
+{
+    "approval": "approved"
+}
+
+###
+
+DELETE http://localhost:3000/lembur/6165216015e8da6f69a15865
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBha2RvZGljb250b2hAZ21haWwuY29tIiwiaWQiOiI2MTVkNTFjYmU3OTg3MTk2ZGUzZGE3YWQiLCJpYXQiOjE2MzQ1MjQ5NjgsImV4cCI6MTYzNDYxMTM2OH0.9Aci5OnLvkMC5wBDli6yw6Gm0UVpO0wKnespU3KzWuU
+
+###
+
+DELETE http://localhost:3000/lembur/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBha2RvZGljb250b2hAZ21haWwuY29tIiwiaWQiOiI2MTVkNTFjYmU3OTg3MTk2ZGUzZGE3YWQiLCJpYXQiOjE2MzM1NzgyNzN9.4PqJuiKj8FEzZduiEVSlp6ieHNX1MvBD6VLu6yxYHUQ
