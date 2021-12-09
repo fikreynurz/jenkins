@@ -13,4 +13,4 @@ test:
   stage: test
   script:
     - echo "Testing.."
-    - npm start
+    - test -f "build/info.txt"
