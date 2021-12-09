@@ -1,16 +1,39 @@
+image: docker:latest
+
+variables:
+  REPOSITORY_URL: fikri17/bismillah
+  IMAGE_TAG: latest
+
+services:
+- docker:dind
+
+before_script:
+  - docker login --username=$DH_USERNAME --password=$DH_PASSWORD
+
 stages:
   - build
-  - test
+  - deploy
 
 build:
   stage: build
-  script: 
-    - echo "Building.."
-    - mkdir build
-    - touch build/info.txt
-
-test:
-  stage: test
   script:
-    - echo "Testing.."
-    - test -f "build/info.txt"
+    - echo "Building image..."
+    - docker build 
+      -t bismillah:latest 
+      --build-arg PORT=$PORT 
+      --no-cache .
+    - echo "Tagging image..."
+    - docker tag bismillah:latest $REPOSITORY_URL:latest
+    - echo "Pushing image..."
+    - docker push $REPOSITORY_URL:latest
+  only:
+    - master
+
+deploy:
+  stage: deploy
+  script:
+    - docker stop bismillah || true && docker rm bismillah || true
+    - docker container run -dt -p $PORT:$PORT --name bismillah $REPOSITORY_URL:latest
+    - docker image prune -f
+  only:
+    - master
